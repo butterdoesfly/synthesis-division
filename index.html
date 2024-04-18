@@ -4,6 +4,11 @@
 		<style>
 			* {
 				text-align: center;
+				font-family:monospace;
+				color:white;
+			}
+			body {
+				background-color:#292b2e;
 			}
 			p {
 					display: inline-block;
@@ -16,7 +21,20 @@
 
 			button {
 				width:10%;
+				border-color: white;
+				border-style: solid;
+				border-width: 1px;
+				background-color: #292b2e;
+				color:white;
 			}
+
+			.num {
+				background-color:#292b2e;
+				border-style:solid;
+				border-width: 1px;
+				border-color: white;
+			}
+			
 		</style>
 
 		<script>
@@ -70,20 +88,20 @@
 	<body>
 		<h1>Quartic Synthetic Division</h1>
 
-		<h5>You can actually use this for any polynomial which has a lower degree than 5. The only change you have to make is to ignore the column on the end.</h5>
+		<!-- <input style="width:50%;"> -->
 		
 		<div style="position:absolute; left:0; right:0; top:20%;">
 		
-			<input type="num" style="position:absolute; left:30%; width: 4%; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 0px; border-top-width: 0px; border-color:black;" id="divisor">
+			<input type="num" style="position:absolute; background-color:#292b2e; left:30%; width: 4%; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 0px; border-top-width: 0px; border-color:white;" id="divisor">
 			
 			<br>
 			
 			<div style="">
-				<input type="number" id="0-0">
-				<input type="number" id="0-1">
-				<input type="number" id="0-2">
-				<input type="number" id="0-3">
-				<input type="number" id="0-4">
+				<input class="num" type="number" id="0-0">
+				<input class="num" type="number" id="0-1">
+				<input class="num" type="number" id="0-2">
+				<input class="num" type="number" id="0-3">
+				<input class="num" type="number" id="0-4">
 			</div>
 			
 			<br>
@@ -112,3 +130,7 @@
 		</div>
 	</body>
 </html>
+<!--
+Make I loop go through elements in list to add ability to add more or remove parts of equation: quadratics, quartics, etc.
+Eventually make it so you can just type in equations and it'll automatically do process, show factors of P, and Q, and make it basically entirely solve it and show work
+-->
